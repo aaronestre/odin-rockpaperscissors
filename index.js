@@ -1,6 +1,8 @@
 let computerScore = 0;
 let humanScore = 0;
 
+const scoreElement = document.getElementById('score');
+
 const getComputerChoice = () => {
     const choices = ["rock", "paper", "scissors"];
 
@@ -32,7 +34,27 @@ const playRound = (humanChoice, computerChoice) => {
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-const result = playRound(humanSelection, computerSelection);
-console.log(result);
+const playGame = () => {
+
+    for (let i = 0; i < 5; i++) {
+        const humanSelection = getHumanChoice();
+        const computerSelection = getComputerChoice();
+        const result = playRound(humanSelection, computerSelection);
+        console.log(result);
+    }
+
+    if (humanScore === computerScore) {
+        return "You tied the game";
+    } 
+    else if (humanScore > computerScore) {
+        return "You won the game";
+    }
+    else {
+        return "You lost the game";
+    }
+
+}
+
+const game = playGame();
+console.log(game);
+scoreElement.innerHTML = game;
