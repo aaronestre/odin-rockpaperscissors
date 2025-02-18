@@ -1,0 +1,26 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1739906926586,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1739906939151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,19 @@\n         <title>Rock Paper Scissors</title>\r\n     </head>\r\n     <body>\r\n         <div class=\"game-container\">\r\n-            \r\n+            <h1>Rock Paper Scissors</h1>\r\n+            <div class=\"score-container\">\r\n+                <div class=\"player-score\">\r\n+                    <h2>Player:</h2>\r\n+                    <h2 id=\"player-score\">0</h2>\r\n+                </div>\r\n+                <div class=\"computer-score\">\r\n+                    <h2>Computer:</h2>\r\n+                    <h2 id=\"computer-score\">0</h2>\r\n+                </div>\r\n+            </div>\r\n         </div>\r\n     </body>\r\n     <script src=\"index.js\"></script>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1739906946471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,16 @@\n                     <h2>Computer:</h2>\r\n                     <h2 id=\"computer-score\">0</h2>\r\n                 </div>\r\n             </div>\r\n+            <div class=\"choice-container\">\r\n+                <button id=\"rock\">Rock</button>\r\n+                <button id=\"paper\">Paper</button>\r\n+                <button id=\"scissors\">Scissors</button>\r\n+            </div>\r\n+            <div class=\"result-container\">\r\n+                <h2 id=\"result\">Make your choice</h2>\r\n+            </div>\r\n         </div>\r\n     </body>\r\n     <script src=\"index.js\"></script>\r\n </html>\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1739906926585,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n    <head>\r\n        <meta charset=\"UTF-8\" />\r\n        <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\" />\r\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n        <title>Rock Paper Scissors</title>\r\n    </head>\r\n    <body>\r\n        <div class=\"game-container\">\r\n            \r\n        </div>\r\n    </body>\r\n    <script src=\"index.js\"></script>\r\n</html>"
+        }
+    ]
+}
