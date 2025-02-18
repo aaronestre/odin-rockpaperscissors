@@ -6,4 +6,7 @@ const getComputerChoice = () => {
     return choices[randomNum];
 }
 
-console.log(getComputerChoice());
+const getHumanChoice = () => {
+    const sign = prompt('Rock, Paper or Scissors?');
+    return sign.toLowerCase();
+}
